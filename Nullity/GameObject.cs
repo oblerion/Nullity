@@ -70,7 +70,7 @@ namespace nullity
         public void SetRotation(float x,float y,float z)
         {
 			_gameobject.transform.rotation = Quaternion.Euler(x,y,z);
-		}
+	}
 	
         public void Rotate(float x,float y,float z)
         {
@@ -78,13 +78,13 @@ namespace nullity
         }
         public void SetPosition(float x,float y,float z)
         {
-			_gameobject.transform.position = new UnityEngine.Vector3(x,y,z);
-		}
+		_gameobject.transform.position = new UnityEngine.Vector3(x,y,z);
+	}
 	
-		public void Translate(float x,float y,float z)
-		{
-			_gameobject.transform.position += new UnityEngine.Vector3(x,y,z);
-		}
+	public void Translate(float x,float y,float z)
+	{
+		_gameobject.transform.position += new UnityEngine.Vector3(x,y,z);
+	}
 	
         public void SetParent(MonoBehaviour mb)
         {   
@@ -110,12 +110,12 @@ namespace nullity
             _gameobject.SetActive(state);
         }
         public void Destroy()
-		{
-			if(_gameobject!=null) 
-            {
-                UnityEngine.GameObject.Destroy(_gameobject);
-                _gameobject=null;
-            }
-		}
+	{
+		if(_gameobject!=null) 
+            	{
+                	UnityEngine.GameObject.Destroy(_gameobject);
+                	_gameobject=null;
+            	}
+	}
     }
 }
