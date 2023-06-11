@@ -43,7 +43,7 @@ just copy Nullity folder in your project.
 - for 2D create Canvas2D and use it  
 - to do wiki ...
 
-[full api](wiki)
+[full api](https://github.com/oblerion/Nullity/wiki)
 
 
 
